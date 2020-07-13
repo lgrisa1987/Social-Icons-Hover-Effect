@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+  font-size: 1.6rem;
+  opacity: 0;
+  -webkit-transition: .5s .5s;
+  transition: .5s .5s;
+}
+
+body.show {
+  opacity: 1;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body {
+    height: 100vh;
+  }
+}
+
+ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  position: inherit;
+  list-style: none;
+}
+
+ul li:nth-child(1) a::before {
+  background: #1877f2;
+}
+
+ul li:nth-child(2) a::before {
+  background: #1da1f2;
+}
+
+ul li:nth-child(3) a::before {
+  background: #25d366;
+}
+
+ul li:nth-child(4) a::before {
+  background: #c32aa3;
+}
+
+ul li:nth-child(5) a::before {
+  background: #ea4c89;
+}
+
+ul li a {
+  position: inherit;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 3rem;
+  border-radius: 50%;
+  color: #e2e2e2;
+  -webkit-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+ul li a:hover {
+  color: #999;
+  -webkit-transform: translateY(-2rem);
+  transform: translateY(-2rem);
+  -webkit-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 24px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 24px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul li a::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+ul li a .fa {
+  position: inherit;
+  z-index: 1;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
